@@ -1,0 +1,20 @@
+{
+  "name": "services",
+  "displayName": "Services Menu",
+  "version": "1.0.0",
+  "description": "Splitscreen layout showcasing agent services and capabilities with pricing",
+  "author": "Phantasy Labs",
+  "pages": {
+    "index": { "template": "pages/index.html", "route": "/" }
+  },
+  "layouts": {
+    "base": "layouts/base.html"
+  },
+  "assets": "assets/",
+  "configSchema": {
+    "accentColor": { "type": "color", "default": "#2563eb", "label": "Accent Color" },
+    "backgroundColor": { "type": "color", "default": "#0a0a0a", "label": "Background Color" },
+    "heroGradient": { "type": "boolean", "default": true, "label": "Hero Gradient Effect" },
+    "showTestimonials": { "type": "boolean", "default": false, "label": "Show Testimonials Section" }
+  }
+}
