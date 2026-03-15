@@ -1,0 +1,6 @@
+{
+  "slug": "theme-services",
+  "kind": "theme",
+  "repoUrl": "https://github.com/phantasy-bot/theme-services",
+  "phase": "scaffold-only"
+}

@@ -1,50 +1,11 @@
-<!DOCTYPE html>
-<html lang="{{site.language}}">
+<!doctype html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>{{site.title}}</title>
-  <meta name="description" content="{{site.description}}">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{site.title}}">
-  <meta property="og:description" content="{{site.description}}">
-  <meta property="og:url" content="{{site.url}}{{currentPath}}">
-  {{#if site.ogImage}}<meta property="og:image" content="{{site.ogImage}}">{{/if}}
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{site.title}}">
-  <meta name="twitter:description" content="{{site.description}}">
-  {{#if site.ogImage}}<meta name="twitter:image" content="{{site.ogImage}}">{{/if}}
-
-  {{#if site.favicon}}<link rel="icon" href="{{site.favicon}}">{{/if}}
-
-  <!-- Theme Styles -->
-  <link rel="stylesheet" href="/theme-assets/style.css">
-
-  <style>
-    :root {
-      --accent: {{theme.accentColor}};
-      --bg: {{theme.backgroundColor}};
-    }
-  </style>
-
-  {{#if customCss}}<style>{{{customCss}}}</style>{{/if}}
-  {{{customHead}}}
+  <meta charset="utf-8" />
+  <title>Services</title>
+  <link rel="stylesheet" href="/theme-assets/styles.css" />
 </head>
-<body{{#if theme.heroGradient}} class="has-gradient"{{/if}}>
-
-  <div class="services-layout">
-    {{{body}}}
-  </div>
-
-  <footer class="services-footer">
-    <div class="footer-inner">
-      <p>&copy; {{year}} {{agent.name}} &middot; Powered by <a href="https://phantasy.dev" target="_blank" rel="noopener noreferrer">Phantasy</a></p>
-    </div>
-  </footer>
-
+<body>
+  {{{content}}}
 </body>
 </html>
