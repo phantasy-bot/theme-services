@@ -6,7 +6,7 @@ Type: `theme`
 Workspace: `site`
 Extension kind: `presentation`
 Repo: https://github.com/phantasy-bot/theme-services
-Phase: `scaffold-only`
+Phase: `source-extracted`
 
 ## Install
 
@@ -16,5 +16,5 @@ git clone https://github.com/phantasy-bot/theme-services.git themes/services
 
 ## Status
 
-This repo is a standalone scaffold and should grow here rather than re-adding extension-specific source to the flagship repo.
+This repo is seeded from the Phantasy monorepo and is now intended to keep converging toward independent maintenance.
 

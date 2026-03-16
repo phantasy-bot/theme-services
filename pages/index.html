@@ -1,4 +1,45 @@
-<main>
-  <h1>Services</h1>
-  <p>Service-oriented business theme for offerings, lead capture, trust blocks, and conversion flows.</p>
-</main>
+<section class="hero">
+  <p class="heroKicker">Companion site theme</p>
+  <h1>{{site.title}}</h1>
+  <p class="heroLead">{{site.description}}</p>
+  <div class="heroActions">
+    {{#each agent.socialLinks}}
+      <a href="{{url}}" class="heroButton" target="_blank" rel="noopener">{{platform}}</a>
+    {{/each}}
+  </div>
+</section>
+
+<section class="grid">
+  <article class="panel">
+    <p class="panelLabel">About</p>
+    <h2>{{agent.name}}</h2>
+    <p>{{agent.bio}}</p>
+  </article>
+  <article class="panel">
+    <p class="panelLabel">Personality</p>
+    <h2>How the companion shows up</h2>
+    <p>{{agent.personality}}</p>
+  </article>
+</section>
+
+{{#if page.posts}}
+<section class="panel feedPanel">
+  <div class="feedHeader">
+    <div>
+      <p class="panelLabel">Chronicle</p>
+      <h2>Latest posts</h2>
+    </div>
+  </div>
+  <div class="feedList">
+    {{#each page.posts}}
+      <article class="feedItem">
+        <div>
+          <h3><a href="/blog/{{slug}}">{{title}}</a></h3>
+          {{#if excerpt}}<p>{{excerpt}}</p>{{/if}}
+        </div>
+        <span>{{formatDate publishedAt}}</span>
+      </article>
+    {{/each}}
+  </div>
+</section>
+{{/if}}
