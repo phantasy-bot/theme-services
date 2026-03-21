@@ -1,19 +1,40 @@
 {
   "name": "@phantasy/theme-services",
-  "version": "1.0.0",
-  "description": "services theme",
-  "main": "theme.json",
-  "type": "module",
-  "files": ["theme.json", "pages/", "layouts/", "partials/", "assets/"],
-  "keywords": ["phantasy", "theme", "services"],
-  "author": "Phantasy Labs",
+  "version": "2.0.1",
+  "private": false,
+  "description": "Service-oriented business theme for offerings, lead capture, trust blocks, and conversion flows.",
   "license": "MIT",
+  "files": [
+    "assets",
+    "layouts",
+    "pages",
+    "theme.json",
+    "README.md",
+    "STATUS.md",
+    "SYNC_MANIFEST.json",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "keywords": [
+    "phantasy",
+    "theme",
+    "services",
+    "business",
+    "offers",
+    "conversion"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/phantasy-bot/theme-services"
   },
+  "homepage": "https://github.com/phantasy-bot/theme-services",
+  "publishConfig": {
+    "access": "public"
+  },
   "phantasy": {
-    "type": "theme",
-    "category": "services"
+    "kind": "theme",
+    "workspace": "site",
+    "extensionKind": "presentation",
+    "themeRoot": "."
   }
 }

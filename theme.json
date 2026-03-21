@@ -1,20 +1,26 @@
 {
   "name": "services",
-  "displayName": "Services Menu",
-  "version": "1.0.0",
-  "description": "Splitscreen layout showcasing agent services and capabilities with pricing",
+  "displayName": "Services",
+  "version": "2.0.1",
+  "description": "Service-oriented business theme for offerings, lead capture, trust blocks, and conversion flows.",
   "author": "Phantasy Labs",
+  "workspace": "site",
+  "extensionKind": "presentation",
   "pages": {
-    "index": { "template": "pages/index.html", "route": "/" }
+    "index": {
+      "template": "pages/index.html",
+      "route": "/"
+    }
   },
   "layouts": {
     "base": "layouts/base.html"
   },
-  "assets": "assets/",
+  "assets": "assets",
   "configSchema": {
-    "accentColor": { "type": "color", "default": "#2563eb", "label": "Accent Color" },
-    "backgroundColor": { "type": "color", "default": "#0a0a0a", "label": "Background Color" },
-    "heroGradient": { "type": "boolean", "default": true, "label": "Hero Gradient Effect" },
-    "showTestimonials": { "type": "boolean", "default": false, "label": "Show Testimonials Section" }
+    "accentColor": {
+      "type": "color",
+      "default": "#10b981",
+      "label": "Accent Color"
+    }
   }
 }
